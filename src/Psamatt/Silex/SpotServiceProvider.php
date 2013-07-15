@@ -60,7 +60,7 @@ class SpotServiceProvider implements ServiceProviderInterface
     {
         $cfg = new \Spot\Config();
 
-        if (!filter_var($dsn, FILTER_VALIDATE_URL)) {
+        if (!filter_var($this->dsn, FILTER_VALIDATE_URL)) {
             throw new \RuntimeException('DSN specified is not valid');
         }
         
