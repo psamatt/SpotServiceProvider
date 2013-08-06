@@ -64,7 +64,7 @@ class SpotServiceProvider implements ServiceProviderInterface
             throw new \RuntimeException('DSN specified is not valid');
         }
         
-        $adapter = $cfg->addConnection('conn_mysql', $this->dsn);
+        $adapter = $cfg->addConnection('conn_db', $this->dsn);
         
         return $cfg;
     }
