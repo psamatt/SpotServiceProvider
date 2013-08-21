@@ -1,6 +1,6 @@
 {
     "name": "psamatt/spot-service-provider",
-    "description": "A Spot (DataMapper ORM) ServiceProvider for Silex for MySql",
+    "description": "A Spot (DataMapper ORM) service provider for Silex",
     "keywords": ["silex"],
     "license": "MIT",
     "authors": [
