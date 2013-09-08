@@ -54,15 +54,11 @@ class SpotServiceProvider implements ServiceProviderInterface
     /**
      * Connect to the database using the dsn
      *
-     * @return Config
+     * @return \Spot\Config
      */
     private function connect()
     {
         $cfg = new \Spot\Config();
-
-        if (!filter_var($this->dsn, FILTER_VALIDATE_URL)) {
-            throw new \RuntimeException('DSN specified is not valid');
-        }
         
         $adapter = $cfg->addConnection('conn_db', $this->dsn);
         
