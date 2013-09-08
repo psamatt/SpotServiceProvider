@@ -2,6 +2,7 @@
     "name": "psamatt/spot-service-provider",
     "description": "A Spot (DataMapper ORM) service provider for Silex",
     "keywords": ["silex"],
+    "version": "1.0.0",
     "license": "MIT",
     "authors": [
         {
