@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Psamatt\Silex;
+namespace Psamatt\Silex\Provider;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
