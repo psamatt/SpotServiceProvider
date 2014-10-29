@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="Spot Service Provider Test Suite">
+            <directory>./tests/Psamatt/Silex</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./src/Psamatt/Silex</directory>
+        </whitelist>
+    </filter>
+</phpunit>
