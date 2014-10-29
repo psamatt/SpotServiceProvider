@@ -10,11 +10,14 @@ Spot is a lightweight DataMapper written for PHP5.3+, its really easy to use and
 
 In order to connect to your MySQL database, pass a valid DSN string into the provider
 
-    $app->register(new Psamatt\Silex\SpotServiceProvider('mysql://username:password@localhost/db_name'));
-    
+```php
+$app->register(
+    new Psamatt\Silex\SpotServiceProvider('mysql://username:password@localhost/db_name')
+);
+```
 In your `index.php`, you can then interact with `Spot` with the following lines:
 
-```
+```php
 // Find all the posts from the database where the status is 1
 $app['spot']->all('Entity\Post', array('status' => 1));
     
