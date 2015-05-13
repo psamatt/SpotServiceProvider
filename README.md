@@ -12,7 +12,9 @@ In order to connect to your MySQL database, pass a valid DSN string into the pro
 
 ```php
 $app->register(
-    new Psamatt\Silex\SpotServiceProvider('mysql://username:password@localhost/db_name')
+    new Psamatt\Silex\SpotServiceProvider(
+        'mysql://username:password@localhost/db_name'
+    )
 );
 ```
 In your `index.php`, you can then interact with `Spot` with the following lines:
